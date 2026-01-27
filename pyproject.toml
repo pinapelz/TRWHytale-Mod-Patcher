@@ -1,0 +1,9 @@
+[project]
+name = "TRWHytale"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bsdiff4>=1.2.6",
+]

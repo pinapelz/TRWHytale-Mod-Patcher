@@ -1,0 +1,92 @@
+{
+  "TranslationProperties": {
+    "Name": "Spaghetti",
+    "Description": "Eat it up, eat it eat it up"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Food_Pasta.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Cooked_Pasta.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Spaghetti.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#a0784d",
+    "HitboxType": "Food_Small",
+    "Texture": [
+      {
+        "Texture": "Items/Consumables/Food/Spaghetti.png",
+        "Weight": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T4"
+        },
+        "HealthRegen_TierCheck_T4",
+        "FruitVeggie_TierCheck_T4"
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ResourceTypeId": "Meats",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Salt",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Spices",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Tomato_Item"
+      },
+      {
+        "ItemId": "Ingredient_Raw_Pasta"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Food_Pasta_Spaghetti"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": ["Prepared"]
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "ItemLevel": 23,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -2]
+  },
+  "Scale": 2
+}
