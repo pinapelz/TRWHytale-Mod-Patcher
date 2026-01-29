@@ -236,3 +236,63 @@ def ryozu_well_water(zip_path: str):
             shutil.rmtree(temp_dir)
     except OSError:
         pass
+
+
+def patch_gambling(zip_path: str):
+    temp_dir, temp_zip_path = create_temp_dir_for_modification(zip_path)
+    npcs_dir = os.path.join(temp_dir, 'Server', 'Drops', 'NPCs')
+    if os.path.exists(npcs_dir):
+        try:
+            shutil.rmtree(npcs_dir)
+        except OSError:
+            try:
+                for root, dirs, files in os.walk(npcs_dir, topdown=False):
+                    for fname in files:
+                        try:
+                            os.remove(os.path.join(root, fname))
+                        except OSError:
+                            pass
+                    for dname in dirs:
+                        try:
+                            os.rmdir(os.path.join(root, dname))
+                        except OSError:
+                            pass
+                try:
+                    os.rmdir(npcs_dir)
+                except OSError:
+                    pass
+            except Exception:
+                pass
+
+    slot_src = os.path.join('patch_data', 'gambling', 'SlotMachine_Droplist.json')
+    slot_dest_dir = os.path.join(temp_dir, 'Server', 'Drops', 'Items')
+    slot_dest = os.path.join(slot_dest_dir, 'SlotMachine_Droplist.json')
+    try:
+        if os.path.exists(slot_src):
+            os.makedirs(slot_dest_dir, exist_ok=True)
+            shutil.copyfile(slot_src, slot_dest)
+    except OSError:
+        pass
+
+    token_src = os.path.join('patch_data', 'gambling', 'SlotToken.json')
+    token_dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Ingredient')
+    token_dest = os.path.join(token_dest_dir, 'SlotToken.json')
+    try:
+        if os.path.exists(token_src):
+            os.makedirs(token_dest_dir, exist_ok=True)
+            shutil.copyfile(token_src, token_dest)
+    except OSError:
+        pass
+
+
+    rezip_temp_dir_into_patched(zip_path, temp_dir)
+    try:
+        if temp_zip_path and os.path.exists(temp_zip_path):
+            os.remove(temp_zip_path)
+    except OSError:
+        pass
+    try:
+        if temp_dir:
+            shutil.rmtree(temp_dir)
+    except OSError:
+        pass

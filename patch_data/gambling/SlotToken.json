@@ -1,0 +1,36 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.SlotToken.name",
+    "Description": "server.items.SlotToken.description"
+  },
+  "Model": "Resources/Items/SlotToken/SlotToken.blockymodel",
+  "Texture": "Resources/Items/SlotToken/SlotToken_Texture.png",
+  "Quality": "Rare",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [221, 87, 136],
+    "Translation": [-14, 29]
+  },
+  "Scale": 1,
+  "Icon": "Icons/ItemsGenerated/SlotToken.png",
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "DropOnDeath": true,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": ["Arcane_Misc"]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin_Cobalt",
+        "Quantity": 1
+      }
+    ]
+  }
+}

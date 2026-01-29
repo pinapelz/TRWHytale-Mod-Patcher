@@ -27,3 +27,8 @@ Generated patched mods will be in `mods/patched`
 
 ## [Ryozu's Water Well](https://www.curseforge.com/hytale/mods/well-water)
 - Changed namespace/item_id in case there is a conflict in the future
+
+## [GAMBLING!!!](https://www.curseforge.com/hytale/mods/gambling)
+- Integrate EcoTale physical coins
+- 1 spin = 1 cobalt coin
+- Adjust loot tables, and add Onyxium
