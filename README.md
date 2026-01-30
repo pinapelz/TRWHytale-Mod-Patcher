@@ -25,9 +25,6 @@ Generated patched mods will be in `mods/patched`
 - Patches in correct audio files for Blue and Red Labubus
 - Make Labubus much more expensive to craft
 
-## [Ryozu's Water Well](https://www.curseforge.com/hytale/mods/well-water)
-- Changed namespace/item_id in case there is a conflict in the future
-
 ## [GAMBLING!!!](https://www.curseforge.com/hytale/mods/gambling)
 - Integrate EcoTale physical coins
 - 1 spin = 1 cobalt coin
