@@ -1,0 +1,81 @@
+{
+  "TranslationProperties": {
+    "Name": "Teto Plush"
+  },
+  "Icon": "Icons/ItemsGenerated/Teticon.png",
+  "Categories": ["Blocks.Deco"],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Teto_Plush.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/tetoxture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Wood",
+    "HitboxType": "Deco_Teto_Plush_Box",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Plushie",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Plushie_Build"
+            }
+          }
+        ]
+      }
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [-4, -6]
+  },
+  "Tags": {
+    "Type": ["Deco"],
+    "Family": ["Plush"]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Scale": 1,
+  "UsePlayerAnimations": false
+}

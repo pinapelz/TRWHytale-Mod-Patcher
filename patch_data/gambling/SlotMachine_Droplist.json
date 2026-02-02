@@ -4,6 +4,206 @@
     "Containers": [
       {
         "Type": "Choice",
+        "Weight": 80,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bear" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bee" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Brick" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Cactee" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Gaia" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Kweebec_Burnt" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Kweebec_Gordon" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Mushroom" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Mushroom_Blue" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Mushroom_Green" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Mushroom_Yellow" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Octopus" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Octopus_Orange" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Octopus_Purple" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Seedling" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Snail" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Snail_Green" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Trork_Blue" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Trork_Green" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Trork_Red" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Varyn" },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Octopus_Chef" },
+            "Weight": 60
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Shark" },
+            "Weight": 60
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Mosshorn" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Seal" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bunny" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bunny_Blue" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bunny_Pink" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Bunny_Yellow" },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Slamma" },
+            "Weight": 5
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Violet_Plushie_Simon" },
+            "Weight": 5
+          },
+          {
+            "Type": "Single",
+            "Item": { "ItemId": "Deco_Teto_Plush" },
+            "Weight": 1
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Poop"
+            },
+            "Weight": 900
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_Basic"
+            },
+            "Weight": 1
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_Ears"
+            },
+            "Weight": 1
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_NoEars"
+            },
+            "Weight": 1
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
         "Weight": 600,
         "Containers": [
           {
@@ -193,9 +393,9 @@
           {
             "Type": "Single",
             "Item": {
-              "ItemId": "Ingredient_Life_Essence_Concentrated"
+              "ItemId": "Food_Pasta_Spaghetti"
             },
-            "Weight": 400
+            "Weight": 25
           },
           {
             "Type": "Single",

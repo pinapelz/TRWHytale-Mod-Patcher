@@ -268,3 +268,61 @@ def patch_gambling(zip_path: str):
             shutil.rmtree(temp_dir)
     except OSError:
         pass
+
+
+def patch_violet_plushie(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        src = os.path.join('patch_data', 'violet_plush', 'Bench_Violet_Plushie.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Bench')
+        dest = os.path.join(dest_dir, 'Bench_Violet_Plushie.json')
+        try:
+            if os.path.exists(src):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src, dest)
+        except OSError:
+            pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+
+def patch_teto_plush(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        src = os.path.join('patch_data', 'teto_plush', 'Deco_Teto_Plush.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Deco')
+        dest = os.path.join(dest_dir, 'Deco_Teto_Plush.json')
+        try:
+            if os.path.exists(src):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src, dest)
+        except OSError:
+            pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass

@@ -1,0 +1,96 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Bench_Violet_Plushie.name",
+    "Description": "items.Bench_Violet_Plushie.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Bench_Violet_Plushie.png",
+  "Categories": ["Furniture.Benches"],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Blocks/Bench/Bench_Plushie.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Bench/Bench_Plushie.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Workbench",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "LocalOpenSoundEventId": "SFX_Plushie_Build",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Plushie_Build",
+      "FailedSoundEventId": "SFX_Furnace_Bench_Processing_Failed",
+      "Id": "Bench_Violet_Plushie",
+      "Categories": [
+        {
+          "Name": "benchCategories.violet_plushie.all",
+          "Id": "Violet_Plushie_All",
+          "Icon": "Icons/CraftingCategories/All.png"
+        },
+        {
+          "Id": "Violet_Plushie_Hytale",
+          "Icon": "Icons/CraftingCategories/Hytale.png",
+          "Name": "benchCategories.violet_plushie.hytale"
+        },
+        {
+          "Id": "Violet_Plushie_Generic",
+          "Icon": "Icons/CraftingCategories/Generic.png",
+          "Name": "benchCategories.violet_plushie.generic"
+        },
+        {
+          "Id": "Violet_Plushie_Creator",
+          "Icon": "Icons/CraftingCategories/Creator.png",
+          "Name": "benchCategories.violet_plushie.creator"
+        },
+        {
+          "Id": "Violet_Plushie_Hypixel",
+          "Icon": "Icons/CraftingCategories/Hypixel.png",
+          "Name": "benchCategories.violet_plushie.hypixel"
+        },
+        {
+          "Id": "Violet_Plushie_Patreon",
+          "Icon": "Icons/CraftingCategories/Patreon.png",
+          "Name": "benchCategories.violet_plushie.patreon"
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Carpenter_Crafting.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6b472f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.385,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [11.4, -16]
+  },
+  "Tags": {
+    "Type": ["Bench"]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

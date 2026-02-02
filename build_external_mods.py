@@ -36,6 +36,10 @@ def main():
         elif mod_file_name.startswith("HYGambling"):
             print("Found Gambling -> Adjusting loot table and coin ingredients")
             patches.patch_gambling(mod_path)
+        elif mod_file_name.startswith("Teto_Plush"):
+            patches.patch_teto_plush(mod_path)
+        elif mod_file_name.startswith("Violets_Plushies"):
+            patches.patch_violet_plushie(mod_path)
         else:
             print(f"[WARNING] {mod_file_name} not recognized")
 
