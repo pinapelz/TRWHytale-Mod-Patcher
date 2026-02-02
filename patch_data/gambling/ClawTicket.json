@@ -1,0 +1,36 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.ClawTicket.name",
+    "Description": "server.items.ClawTicket.description"
+  },
+  "Model": "Resources/Items/ClawTicket/ClawTicket.blockymodel",
+  "Texture": "Resources/Items/ClawTicket/ClawTicketTexture.png",
+  "Quality": "Rare",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [221, 87, 136],
+    "Translation": [-14, 29]
+  },
+  "Scale": 1.5,
+  "Icon": "Icons/Items/ClawTicket.png",
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "DropOnDeath": true,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": ["Arcane_Misc"]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin_Gold",
+        "Quantity": 1
+      }
+    ]
+  }
+}
