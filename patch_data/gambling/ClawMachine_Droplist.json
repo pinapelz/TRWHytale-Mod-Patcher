@@ -1,0 +1,362 @@
+{
+  "Container": {
+    "Type": "Choice",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Poop"
+            },
+            "Weight": 890
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_Basic"
+            },
+            "Weight": 1
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_Ears"
+            },
+            "Weight": 1
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Epics_LabubuEgg_NoEars"
+            },
+            "Weight": 1
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 600,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Plant_Fruit_Berries_Red",
+              "QuantityMin": 1,
+              "QuantityMax": 5
+            },
+            "Weight": 400
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Food_Popcorn"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Food_Fried_Potato"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Food_Pie_Apple"
+            },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Charcoal",
+              "QuantityMax": 10
+            },
+            "Weight": 300
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 300,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Leather_Prismic"
+            },
+            "Weight": 2
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Onyxium"
+            },
+            "Weight": 30
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Adamantite"
+            },
+            "Weight": 250
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Gold"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Thorium"
+            },
+            "Weight": 3500
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Gold"
+            },
+            "Weight": 2000
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Copper"
+            },
+            "Weight": 2500
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Cobalt"
+            },
+            "Weight": 1950
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 300,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Copper",
+              "QuantityMin": 10,
+              "QuantityMax": 20
+            },
+            "Weight": 260
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Copper",
+              "QuantityMin": 30,
+              "QuantityMax": 45
+            },
+            "Weight": 260
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Copper",
+              "QuantityMin": 60,
+              "QuantityMax": 80
+            },
+            "Weight": 220
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Copper",
+              "QuantityMin": 90,
+              "QuantityMax": 110
+            },
+            "Weight": 160
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Gold",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            },
+            "Weight": 35
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Adamantite",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            },
+            "Weight": 4
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Coin_Mithril",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            },
+            "Weight": 1
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 400,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "SlotToken",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            },
+            "Weight": 300
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "SlotToken"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Food_Pasta_Spaghetti"
+            },
+            "Weight": 25
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Recipe_Food_Salad_Caesar"
+            },
+            "Weight": 100
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Diamond"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Emerald"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Ruby"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Sapphire"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Topaz"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Voidstone"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Rock_Gem_Zephyr"
+            }
+          }
+        ],
+        "Weight": 100
+      },
+      {
+        "Type": "Choice",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Poop"
+            },
+            "Weight": 900
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "lucky_block"
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Potion_Health_Greater"
+            },
+            "Weight": 300
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Bomb",
+              "QuantityMax": 10
+            },
+            "Weight": 300
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Potion_Mana_Large"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Spellbook_Rekindle_Embers",
+              "QuantityMax": 5
+            },
+            "Weight": 100
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Bomb_Potion_Poison",
+              "QuantityMax": 16
+            },
+            "Weight": 100
+          }
+        ],
+        "Weight": 500
+      }
+    ]
+  }
+}
