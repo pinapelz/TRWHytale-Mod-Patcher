@@ -4,172 +4,6 @@
     "Containers": [
       {
         "Type": "Choice",
-        "Weight": 80,
-        "Containers": [
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bear" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bee" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Brick" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Cactee" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Gaia" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Kweebec_Burnt" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Kweebec_Gordon" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Mushroom" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Mushroom_Blue" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Mushroom_Green" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Mushroom_Yellow" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Octopus" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Octopus_Orange" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Octopus_Purple" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Seedling" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Snail" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Snail_Green" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Trork_Blue" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Trork_Green" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Trork_Red" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Varyn" },
-            "Weight": 100
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Octopus_Chef" },
-            "Weight": 60
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Shark" },
-            "Weight": 60
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Mosshorn" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Seal" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bunny" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bunny_Blue" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bunny_Pink" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Bunny_Yellow" },
-            "Weight": 25
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Slamma" },
-            "Weight": 5
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Violet_Plushie_Simon" },
-            "Weight": 5
-          },
-          {
-            "Type": "Single",
-            "Item": { "ItemId": "Deco_Teto_Plush" },
-            "Weight": 1
-          }
-        ]
-      },
-      {
-        "Type": "Choice",
         "Weight": 100,
         "Containers": [
           {
@@ -177,7 +11,7 @@
             "Item": {
               "ItemId": "Ingredient_Poop"
             },
-            "Weight": 900
+            "Weight": 890
           },
           {
             "Type": "Single",
@@ -225,6 +59,13 @@
           {
             "Type": "Single",
             "Item": {
+              "ItemId": "Food_Fried_Potato"
+            },
+            "Weight": 200
+          },
+          {
+            "Type": "Single",
+            "Item": {
               "ItemId": "Food_Pie_Apple"
             },
             "Weight": 100
@@ -255,21 +96,21 @@
             "Item": {
               "ItemId": "Ingredient_Bar_Onyxium"
             },
-            "Weight": 3
+            "Weight": 30
           },
           {
             "Type": "Single",
             "Item": {
               "ItemId": "Ingredient_Bar_Adamantite"
             },
-            "Weight": 25
+            "Weight": 250
           },
           {
             "Type": "Single",
             "Item": {
               "ItemId": "Ingredient_Bar_Gold"
             },
-            "Weight": 20
+            "Weight": 200
           },
           {
             "Type": "Single",
@@ -386,7 +227,7 @@
           {
             "Type": "Single",
             "Item": {
-              "ItemId": "Deco_Kweebec_Plush"
+              "ItemId": "SlotToken"
             },
             "Weight": 200
           },
@@ -467,7 +308,7 @@
           {
             "Type": "Single",
             "Item": {
-              "ItemId": "Weapon_Longsword_Flame"
+              "ItemId": "lucky_block"
             }
           }
         ]
@@ -493,7 +334,7 @@
           {
             "Type": "Single",
             "Item": {
-              "ItemId": "Weapon_Deployable_Healing_Totem"
+              "ItemId": "Potion_Mana_Large"
             },
             "Weight": 200
           },
