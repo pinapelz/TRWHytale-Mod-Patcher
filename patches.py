@@ -153,7 +153,7 @@ def snip3_foodpack_apply_patch(zip_path: str):
         dump_json_file(manifest_json, os.path.join(temp_dir, 'manifest.json'))
         t4_heal_file = os.path.join(temp_dir, 'Server', 'Entity', 'Effects', "Food_Instant_Heal_T4.json")
         t4_insta_heal_json = load_json_file(t4_heal_file)
-        t4_insta_heal_json["StatModifiers"]["Health"] = 40
+        t4_insta_heal_json["StatModifiers"]["Health"] = 30
         dump_json_file(t4_insta_heal_json, t4_heal_file)
 
         try:
