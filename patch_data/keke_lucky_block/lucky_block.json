@@ -1,0 +1,181 @@
+{
+  "TranslationProperties": {
+    "Name": "lucky_blocks.Lucky_Block.name",
+    "Description": "lucky_blocks.Lucky_Block.desc"
+  },
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/lucky_block.png",
+  "Categories": ["Tool.Block"],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "BlockParticleSetId": "Crystal",
+    "Textures": [
+      {
+        "All": "BlockTextures/lucky_block.png"
+      }
+    ],
+    "ParticleColor": "#e6c720",
+    "BlockSoundSetId": "Crystal",
+    "BlockBreakingDecalId": "Breaking_Decals_Rock",
+    "CubeShadingMode": "Reflective",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "SpawnNPC",
+            "EntityId": "Skeleton_Archer",
+            "SpawnChance": 0.01,
+            "SpawnOffset": {
+              "Y": 1
+            }
+          },
+          {
+            "Type": "SpawnNPC",
+            "EntityId": "Lucky_Block_Loot",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 1
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Spirit_Ember"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Spirit_Frost"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Skeleton_Archmage_Wander"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Skeleton_Fighter"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Skeleton_Soldier"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Zombie_Burnt"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Zombie_Sand"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Zombie_Aberrant_Big"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Spider"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Golem_Crystal_Earth"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Golem_Crystal_Thunder"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Shadow_Knight"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Werewolf"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Wraith"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.01,
+            "EntityId": "Cow_Undead"
+          },
+          {
+            "Type": "DestroyBlock"
+          }
+        ]
+      }
+    }
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Rock"
+    }
+  ],
+  "ItemLevel": 20
+}

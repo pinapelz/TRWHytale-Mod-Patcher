@@ -33,13 +33,21 @@ def main():
         elif "EpicsLabubuPets" in mod_file_name:
             print("Found Labubu Mod, Making it expensive like the real stuff")
             patches.epics_labubu_patch(mod_path)
-        elif mod_file_name.startswith("HYGambling"):
+        elif mod_file_name.startswith("GAMBLING"):
             print("Found Gambling -> Adjusting loot table and coin ingredients")
             patches.patch_gambling(mod_path)
         elif mod_file_name.startswith("Teto_Plush"):
             patches.patch_teto_plush(mod_path)
         elif mod_file_name.startswith("Violets_Plushies"):
             patches.patch_violet_plushie(mod_path)
+        elif mod_file_name.startswith("Dungeon.Khaos"):
+            patches.patch_khaos(mod_path)
+        elif mod_file_name.startswith("Lucky-Blocks"):
+            patches.patch_lucky_block(mod_path)
+        elif mod_file_name.startswith("WalterWhite"):
+            patches.patch_walter_white(mod_path)
+        elif mod_file_name.startswith("Resurrectable"):
+            patches.patch_ressurectable_dinos(mod_path)
         else:
             print(f"[WARNING] {mod_file_name} not recognized")
 

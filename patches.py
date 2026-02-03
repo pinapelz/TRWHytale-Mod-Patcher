@@ -246,6 +246,15 @@ def patch_gambling(zip_path: str):
     except OSError:
         pass
 
+    claw_machine_src = os.path.join('patch_data', 'gambling', 'ClawMachine_Droplist.json')
+    claw_machine_dest = os.path.join(slot_dest_dir, 'ClawMachine_Droplist.json')
+    try:
+        if os.path.exists(claw_machine_src):
+            os.makedirs(slot_dest_dir, exist_ok=True)
+            shutil.copyfile(claw_machine_src, claw_machine_dest)
+    except OSError:
+        pass
+
     token_src = os.path.join('patch_data', 'gambling', 'SlotToken.json')
     token_dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Ingredient')
     token_dest = os.path.join(token_dest_dir, 'SlotToken.json')
@@ -256,6 +265,14 @@ def patch_gambling(zip_path: str):
     except OSError:
         pass
 
+    claw_src = os.path.join('patch_data', 'gambling', 'ClawTicket.json')
+    claw_dest = os.path.join(token_dest_dir, 'ClawTicket.json')
+    try:
+        if os.path.exists(claw_src):
+            os.makedirs(token_dest_dir, exist_ok=True)
+            shutil.copyfile(claw_src, claw_dest)
+    except OSError:
+        pass
 
     rezip_temp_dir_into_patched(zip_path, temp_dir)
     try:
@@ -313,6 +330,136 @@ def patch_teto_plush(mod_path):
                 shutil.copyfile(src, dest)
         except OSError:
             pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+def patch_khaos(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        src = os.path.join('patch_data', 'khaos_dungeon', 'PortalKey_Template.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Portal')
+        dest = os.path.join(dest_dir, 'PortalKey_Template.json')
+        try:
+            if os.path.exists(src):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src, dest)
+        except OSError:
+            pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+
+def patch_lucky_block(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        src_lucky = os.path.join('patch_data', 'keke_lucky_block', 'lucky_block.json')
+        src_unlucky = os.path.join('patch_data', 'keke_lucky_block', 'Unlucky_Block.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items')
+        dest_lucky = os.path.join(dest_dir, 'lucky_block.json')
+        dest_unlucky = os.path.join(dest_dir, 'Unlucky_Block.json')
+        try:
+            if os.path.exists(src_lucky):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src_lucky, dest_lucky)
+            if os.path.exists(src_unlucky):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src_unlucky, dest_unlucky)
+        except OSError:
+            pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+
+def patch_walter_white(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        src = os.path.join('patch_data', 'walter_white', 'WalterWhite_Merchant_Shop.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'BarterShops')
+        dest = os.path.join(dest_dir, 'WalterWhite_Merchant_Shop.json')
+        try:
+            if os.path.exists(src):
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.copyfile(src, dest)
+        except OSError:
+            pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+
+def patch_ressurectable_dinos(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+        items_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items')
+        if os.path.exists(items_dir):
+            for root, _, files in os.walk(items_dir):
+                for fname in files:
+                    if not fname.lower().endswith('.json'):
+                        continue
+                    full_path = os.path.join(root, fname)
+                    try:
+                        data = load_json_file(full_path)
+                        if isinstance(data, dict) and "Recipe" in data:
+                            try:
+                                data.pop("Recipe", None)
+                                dump_json_file(data, full_path)
+                            except OSError:
+                                # If writing fails, skip this file
+                                pass
+                    except Exception:
+                        # If loading/parsing fails, skip this file
+                        pass
 
         rezip_temp_dir_into_patched(mod_path, temp_dir)
     finally:

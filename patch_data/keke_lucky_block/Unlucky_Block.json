@@ -1,0 +1,117 @@
+{
+  "TranslationProperties": {
+    "Name": "lucky_blocks.Unlucky_Block.name",
+    "Description": "lucky_blocks.UnLucky_Block.desc"
+  },
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/unlucky_block.png",
+  "Categories": ["Tool.Block"],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "BlockParticleSetId": "Crystal",
+    "Textures": [
+      {
+        "All": "BlockTextures/Unlucky_Block.png"
+      }
+    ],
+    "ParticleColor": "#8b590c",
+    "BlockSoundSetId": "Crystal",
+    "BlockBreakingDecalId": "Breaking_Decals_Rock",
+    "CubeShadingMode": "Reflective",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "EntityId": "Unlucky_Block_Loot"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.3,
+            "EntityId": "Skeleton_Archer"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnChance": 0.1,
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "EntityId": "Skeleton_Archmage"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnChance": 0.3,
+            "EntityId": "Skeleton_Fighter",
+            "SpawnOffset": {
+              "Y": 1
+            }
+          },
+          {
+            "Type": "SpawnNPC",
+            "EntityId": "Skeleton_Knight",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.2
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.2,
+            "EntityId": "Zombie"
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnChance": 0.1,
+            "EntityId": "Zombie_Burnt",
+            "SpawnOffset": {
+              "Y": 1
+            }
+          },
+          {
+            "Type": "SpawnNPC",
+            "EntityId": "Lucky_Block_Loot",
+            "SpawnOffset": {
+              "Y": 1
+            },
+            "SpawnChance": 0.001
+          },
+          {
+            "Type": "SpawnNPC",
+            "SpawnChance": 0.01,
+            "EntityId": "Yeti",
+            "SpawnOffset": {
+              "Y": 1
+            }
+          },
+          {
+            "Type": "DestroyBlock"
+          }
+        ]
+      }
+    }
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Rock"
+    }
+  ],
+  "ItemLevel": 20
+}

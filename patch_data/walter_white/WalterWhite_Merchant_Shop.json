@@ -1,0 +1,203 @@
+{
+  "DisplayNameKey": "server.barter.walter_merchant.title",
+  "RefreshInterval": {
+    "Days": 3
+  },
+  "RestockHour": 6,
+  "TradeSlots": [
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "lucky_block",
+          "Quantity": 1
+        },
+        "Input": [
+          {
+            "ItemId": "Coin_Adamantite",
+            "Quantity": 5
+          }
+        ],
+        "Stock": 9999
+      }
+    },
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "Epics_LabubuEgg_Basic",
+          "Quantity": 1
+        },
+        "Input": [
+          {
+            "ItemId": "Coin_Mithril",
+            "Quantity": 5
+          }
+        ],
+        "Stock": 9999
+      }
+    },
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "Potion_Mana_Large",
+          "Quantity": 1
+        },
+        "Input": [
+          {
+            "ItemId": "Ingredient_Life_Essence",
+            "Quantity": 250
+          }
+        ],
+        "Stock": 3
+      }
+    },
+    {
+      "Type": "Pool",
+      "SlotCount": 3,
+      "Trades": [
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Ingredient_Hide_Heavy",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Coin_Cobalt",
+              "Quantity": 1
+            }
+          ],
+          "Stock": [10]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Food_Pasta_Spaghetti",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Coin_Cobalt",
+              "Quantity": 5
+            }
+          ],
+          "Stock": [5]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Food_Egg",
+            "Quantity": 3
+          },
+          "Input": [
+            {
+              "ItemId": "Ingredient_Crystal_Blue",
+              "Quantity": 20
+            }
+          ],
+          "Stock": [20]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Food_Pizza_Cheese",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Ingredient_Crystal_Cyan",
+              "Quantity": 20
+            }
+          ],
+          "Stock": [20]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Ingredient_Spices",
+            "Quantity": 4
+          },
+          "Input": [
+            {
+              "ItemId": "Ingredient_Stick",
+              "Quantity": 20
+            }
+          ],
+          "Stock": [2]
+        },
+        {
+          "Weight": 15,
+          "Output": {
+            "ItemId": "Armor_Diving_Crude_Head",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Wood_Oak_Trunk",
+              "Quantity": 100
+            }
+          ],
+          "Stock": [1]
+        },
+        {
+          "Output": {
+            "ItemId": "Coin_Gold",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "Quantity": 1,
+              "ItemId": "Ingredient_Bar_Gold"
+            }
+          ],
+          "Stock": [5],
+          "Weight": 5
+        },
+        {
+          "Weight": 25,
+          "Output": {
+            "ItemId": "Armor_Wood_Head",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Wood_Oak_Trunk",
+              "Quantity": 15
+            }
+          ],
+          "Stock": [1]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Ingredient_Flour",
+            "Quantity": 3
+          },
+          "Input": [
+            {
+              "ItemId": "Ingredient_Fibre",
+              "Quantity": 30
+            }
+          ],
+          "Stock": [3]
+        },
+        {
+          "Weight": 50,
+          "Output": {
+            "ItemId": "Ingredient_Void_Essence",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Ingredient_Life_Essence",
+              "Quantity": 5
+            }
+          ],
+          "Stock": [10]
+        }
+      ]
+    }
+  ]
+}

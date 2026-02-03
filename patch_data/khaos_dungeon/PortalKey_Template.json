@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "PortalKey_Template.items.PortalKey_Template.name",
+    "Description": "PortalKey_Template.items.PortalKey_Template.description"
+  },
+  "Icon": "Icons/ItemsGenerated/PortalKey_Howling_Sands.png",
+  "Categories": ["Blocks.Portals"],
+  "PortalKey": {
+    "PortalType": "Portal_FragmentTemplate",
+    "TimeLimitSeconds": 3600
+  },
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Portal_Shard.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Portal_Shard_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "FlipType": "Symmetric",
+    "SupportDropType": "Break",
+    "CubeShadingMode": "Standard",
+    "RandomRotation": "None",
+    "VariantRotation": "None",
+    "RotationYawPlacementOffset": "None",
+    "AllowsMultipleUsers": true,
+    "IsDoor": false,
+    "SupportsRequiredFor": "All"
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": ["Portal", "Temporary"]
+  },
+  "ItemLevel": 51,
+  "IconProperties": {
+    "Scale": 1.4,
+    "Rotation": [22.5, 137.0, 22.5],
+    "Translation": [0.0, 1.0]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Arcanebench",
+        "RequiredTierLevel": 1,
+        "Categories": ["Arcane_Portals"]
+      }
+    ]
+  },
+  "Quality": "Legendary"
+}
