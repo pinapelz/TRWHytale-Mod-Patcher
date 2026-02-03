@@ -380,9 +380,12 @@ def patch_lucky_block(mod_path):
         temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
         src_lucky = os.path.join('patch_data', 'keke_lucky_block', 'lucky_block.json')
         src_unlucky = os.path.join('patch_data', 'keke_lucky_block', 'Unlucky_Block.json')
+        src_loot_drop = os.path.join('patch_data', 'keke_lucky_block', 'Lucky_Block_Loot_Drop.json')
         dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items')
         dest_lucky = os.path.join(dest_dir, 'lucky_block.json')
         dest_unlucky = os.path.join(dest_dir, 'Unlucky_Block.json')
+        dest_drops_dir = os.path.join(temp_dir, 'Server', 'Drops')
+        dest_loot_drop = os.path.join(dest_drops_dir, 'Lucky_Block_Loot_Drop.json')
         try:
             if os.path.exists(src_lucky):
                 os.makedirs(dest_dir, exist_ok=True)
@@ -390,6 +393,10 @@ def patch_lucky_block(mod_path):
             if os.path.exists(src_unlucky):
                 os.makedirs(dest_dir, exist_ok=True)
                 shutil.copyfile(src_unlucky, dest_unlucky)
+            # Replace the drops loot drop file if a patched version exists
+            if os.path.exists(src_loot_drop):
+                os.makedirs(dest_drops_dir, exist_ok=True)
+                shutil.copyfile(src_loot_drop, dest_loot_drop)
         except OSError:
             pass
 
@@ -595,6 +602,36 @@ def patch_overworld(mod_path):
                     pass
                 shutil.copyfile(src_ore, dest_ore)
         except OSError:
+            pass
+
+        # Replace Server/Item/ItemsOverworld_Soil_Dirt.json with patched version if available
+        src_soil = os.path.join('patch_data', 'overworld', 'Overworld_Soil_Dirt.json')
+        dest_soil = os.path.join(temp_dir, 'Server', 'Item', 'Items','Overworld_Soil_Dirt.json')
+        try:
+            if os.path.exists(src_soil):
+                os.makedirs(os.path.dirname(dest_soil), exist_ok=True)
+                try:
+                    if os.path.exists(dest_soil):
+                        os.remove(dest_soil)
+                except OSError:
+                    pass
+                shutil.copyfile(src_soil, dest_soil)
+        except OSError:
+            pass
+
+        # Remove the "Recipe" key from Server/Item/Items/Overworld_Portal_Key.json if it exists
+        portal_path = os.path.join(temp_dir, 'Server', 'Item', 'Items', 'Overworld_Portal_Key.json')
+        try:
+            if os.path.exists(portal_path):
+                try:
+                    portal_json = load_json_file(portal_path)
+                    if isinstance(portal_json, dict) and "Recipe" in portal_json:
+                        portal_json.pop("Recipe", None)
+                        dump_json_file(portal_json, portal_path)
+                except Exception:
+                    # If loading or writing fails, skip modification
+                    pass
+        except Exception:
             pass
 
         rezip_temp_dir_into_patched(mod_path, temp_dir)

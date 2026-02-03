@@ -15,20 +15,24 @@
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Soil_Grass",
-    "Flags": {},
+    "HitboxType": "Full",
+    "Flags": {
+      "Breakable": true
+    },
     "BlockParticleSetId": "Dirt",
+    "ParticleColor": "#98743b",
+    "BlockSoundSetId": "Dirt",
+    "BlockBreakingDecalId": "Breaking_Decals_Soil",
+    "CubeShadingMode": "Standard",
     "Textures": [
       {
         "All": "Resources/dirt.png",
         "Weight": 1
       }
     ],
-    "ParticleColor": "#98743b",
-    "BlockSoundSetId": "Dirt",
-    "BlockBreakingDecalId": "Breaking_Decals_Soil",
     "Gathering": {
       "Breaking": {
-        "GatherType": "Soil",
+        "GatherType": "Soils",
         "ItemId": "Overworld_Soil_Dirt"
       }
     }

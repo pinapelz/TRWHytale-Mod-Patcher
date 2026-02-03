@@ -18,21 +18,21 @@
             "Item": {
               "ItemId": "Epics_LabubuEgg_Basic"
             },
-            "Weight": 1
+            "Weight": 4
           },
           {
             "Type": "Single",
             "Item": {
               "ItemId": "Epics_LabubuEgg_Ears"
             },
-            "Weight": 1
+            "Weight": 5
           },
           {
             "Type": "Single",
             "Item": {
               "ItemId": "Epics_LabubuEgg_NoEars"
             },
-            "Weight": 1
+            "Weight": 3
           }
         ]
       },
@@ -189,7 +189,7 @@
               "QuantityMin": 1,
               "QuantityMax": 1
             },
-            "Weight": 35
+            "Weight": 80
           },
           {
             "Type": "Single",
@@ -198,7 +198,7 @@
               "QuantityMin": 1,
               "QuantityMax": 1
             },
-            "Weight": 4
+            "Weight": 10
           },
           {
             "Type": "Single",
@@ -207,7 +207,7 @@
               "QuantityMin": 1,
               "QuantityMax": 1
             },
-            "Weight": 1
+            "Weight": 3
           }
         ]
       },
@@ -273,30 +273,13 @@
             "Item": {
               "ItemId": "Rock_Gem_Sapphire"
             }
-          },
-          {
-            "Type": "Single",
-            "Item": {
-              "ItemId": "Rock_Gem_Topaz"
-            }
-          },
-          {
-            "Type": "Single",
-            "Item": {
-              "ItemId": "Rock_Gem_Voidstone"
-            }
-          },
-          {
-            "Type": "Single",
-            "Item": {
-              "ItemId": "Rock_Gem_Zephyr"
-            }
           }
         ],
         "Weight": 100
       },
       {
         "Type": "Choice",
+        "Weight": 200,
         "Containers": [
           {
             "Type": "Single",

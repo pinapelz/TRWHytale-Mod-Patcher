@@ -1,0 +1,792 @@
+{
+  "Container": {
+    "Type": "Choice",
+    "Containers": [
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "lucky_block"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Bronze_Chest"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Bronze_Hands"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Bronze_Head"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Bronze_Legs"
+        }
+      },
+      {
+        "Type": "Multiple",
+        "MinCount": 1,
+        "MaxCount": 1,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Container_Bucket"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Alchemy_Cauldron"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Deco_Bucket"
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Ingredient_Bar_Copper",
+          "QuantityMin": 1,
+          "QuantityMax": 5
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Ingredient_Bar_Gold",
+          "QuantityMin": 1,
+          "QuantityMax": 3
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Cloth_Wool_Chest"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Cloth_Wool_Hands"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Cloth_Wool_Head"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Cloth_Wool_Legs"
+        }
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Food_Candy_Cane",
+          "QuantityMin": 5,
+          "QuantityMax": 10
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Glider"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Silver",
+          "QuantityMin": 1,
+          "QuantityMax": 3
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Mithril",
+          "QuantityMin": 10,
+          "QuantityMax": 15
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Blowgun_Tribal"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Claws_Tribal"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Iron_Chest"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Iron_Hands"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Iron_Head"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Iron_Legs"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Steel_Chest"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Steel_Hands"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Steel_Head"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Armor_Steel_Legs"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Thorium",
+          "QuantityMax": 3
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Onyxium",
+          "QuantityMin": 1,
+          "QuantityMax": 3
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Adamantite",
+          "QuantityMin": 1,
+          "QuantityMax": 3
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Doomed"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 50,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Scythe_Void"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Tribal"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Iron",
+          "QuantityMin": 30,
+          "QuantityMax": 60
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Deadeye",
+          "QuantityMin": 30,
+          "QuantityMax": 60
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Clearshot",
+          "QuantityMin": 30,
+          "QuantityMax": 60
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Crude",
+          "QuantityMin": 30,
+          "QuantityMax": 70
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "SlotToken",
+          "QuantityMin": 50,
+          "QuantityMax": 250
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Spear_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Gun_Blunderbuss"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Spear_Cobalt"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Staff_Doomed"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "ClawTicket",
+          "QuantityMin": 30,
+          "QuantityMax": 60
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 10,
+        "Item": {
+          "ItemId": "Coin_Mithril"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Mace_Thorium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Bronze"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Cobalt"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Copper"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Gold"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Coin_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Mithril"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Onyxium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Prisma"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Silver"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Bar_Thorium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Blue"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Cyan"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Green"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Purple"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Red"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_White"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Ingredient_Crystal_Yellow"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Cobalt"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Copper"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Crude"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Doomed"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Iron"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Mithril"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Onyxium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Scarab"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Scythe_Void"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Steel_Rusty"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Stone_Trork"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Thorium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Tribal"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Battleaxe_Wood_Fence"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Adamantite_Saurian"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Bone"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Bronze_Ancient"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Bronze"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Claw_Bone"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Poison",
+          "QuantityMin": 50,
+          "QuantityMax": 100
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Fire",
+          "QuantityMin": 50,
+          "QuantityMax": 100
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Ice",
+          "QuantityMin": 50,
+          "QuantityMax": 100
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Arrow_Iron",
+          "QuantityMin": 50,
+          "QuantityMax": 100
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Crude"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Doomed"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Fang_Doomed"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Iron"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Mithril"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Onyxium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Stone_Trork"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Daggers_Thorium"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Kunai"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Longsword_Iron"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Longsword_Adamantite"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Longsword_Cobalt"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Longsword_Flame"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Longsword_Spectral"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Sword_Frost"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Sword_Silversteel"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Sword_Runic"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Crossbow_Ancient_Steel"
+        }
+      },
+      {
+        "Type": "Single",
+        "Weight": 100,
+        "Item": {
+          "ItemId": "Weapon_Crossbow_Iron"
+        }
+      }
+    ],
+    "RollsMin": 5,
+    "RollsMax": 10
+  }
+}
