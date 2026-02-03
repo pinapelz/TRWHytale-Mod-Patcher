@@ -79,10 +79,10 @@
         "Input": [
           {
             "ItemId": "DivinePancakeCrumbs",
-            "Quantity": 5
+            "Quantity": 2
           }
         ],
-        "Stock": 5
+        "Stock": 50
       }
     },
     {
