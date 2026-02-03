@@ -1,0 +1,44 @@
+{
+  "TranslationProperties": {
+    "Name": "Diamond Ore - Stone",
+    "Description": ""
+  },
+  "Categories": ["Blocks.Ores"],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "RandomRotation": "YawStep90",
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "Resources/diamond_ore.png"
+      }
+    ],
+    "ParticleColor": "#595957",
+    "BlockSoundSetId": "Ore",
+    "CubeShadingMode": "Standard",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Ore_Diamond_Overworld"
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": ["Ore"],
+    "Family": ["Iron"]
+  },
+  "MaxStack": 64,
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -13.5]
+  },
+  "Icon": "Icons/ItemsGenerated/Ore_Diamond.png",
+  "Texture": "Resources/iron_ore.png"
+}

@@ -422,6 +422,24 @@ def patch_walter_white(mod_path):
         except OSError:
             pass
 
+        # Ensure the WalterWhite merchant NPC is marked invulnerable (case-insensitive removal of prior keys)
+        npc_path = os.path.join(temp_dir, 'Server', 'NPC', 'Roles', 'Intelligent', 'Neutral', 'Kweebec', 'WalterWhite_Merchant.json')
+        try:
+            if os.path.exists(npc_path):
+                try:
+                    npc_data = load_json_file(npc_path)
+                    if isinstance(npc_data, dict):
+                        # Remove any existing invulnerable-style keys, then set canonical key
+                        npc_data.pop('Invulnerable', None)
+                        npc_data.pop('invulnerable', None)
+                        npc_data['Invulnerable'] = True
+                        dump_json_file(npc_data, npc_path)
+                except Exception:
+                    # If loading or writing fails, skip modification
+                    pass
+        except Exception:
+            pass
+
         rezip_temp_dir_into_patched(mod_path, temp_dir)
     finally:
         try:
@@ -460,6 +478,124 @@ def patch_ressurectable_dinos(mod_path):
                     except Exception:
                         # If loading/parsing fails, skip this file
                         pass
+
+        rezip_temp_dir_into_patched(mod_path, temp_dir)
+    finally:
+        try:
+            if temp_zip_path and os.path.exists(temp_zip_path):
+                os.remove(temp_zip_path)
+        except OSError:
+            pass
+        try:
+            if temp_dir:
+                shutil.rmtree(temp_dir)
+        except OSError:
+            pass
+
+def patch_overworld(mod_path):
+    temp_dir = None
+    temp_zip_path = None
+    try:
+        temp_dir, temp_zip_path = create_temp_dir_for_modification(mod_path)
+
+        server_dir = os.path.join(temp_dir, 'Server')
+        src_instances = os.path.join(server_dir, 'instances')
+        dst_instances = os.path.join(server_dir, 'Instances')
+
+        if os.path.exists(src_instances):
+            try:
+                # If the correct-cased target doesn't exist, a simple rename is fine.
+                if not os.path.exists(dst_instances):
+                    os.makedirs(os.path.dirname(dst_instances), exist_ok=True)
+                    os.rename(src_instances, dst_instances)
+                else:
+                    # Merge contents from 'instances' into 'Instances'
+                    for name in os.listdir(src_instances):
+                        s = os.path.join(src_instances, name)
+                        d = os.path.join(dst_instances, name)
+                        try:
+                            if os.path.exists(d):
+                                # If destination exists, attempt to merge/replace sensibly.
+                                if os.path.isdir(s) and os.path.isdir(d):
+                                    # Move contents of directory s into directory d
+                                    for root, dirs, files in os.walk(s):
+                                        rel = os.path.relpath(root, s)
+                                        target_root = os.path.join(d, rel) if rel != '.' else d
+                                        os.makedirs(target_root, exist_ok=True)
+                                        for f in files:
+                                            try:
+                                                shutil.move(os.path.join(root, f), os.path.join(target_root, f))
+                                            except OSError:
+                                                try:
+                                                    shutil.copy2(os.path.join(root, f), os.path.join(target_root, f))
+                                                except Exception:
+                                                    pass
+                                    # remove the source subtree
+                                    try:
+                                        shutil.rmtree(s)
+                                    except OSError:
+                                        pass
+                                else:
+                                    # For files or mismatched types, try to replace destination
+                                    try:
+                                        if os.path.isdir(d):
+                                            shutil.rmtree(d)
+                                        else:
+                                            os.remove(d)
+                                    except OSError:
+                                        pass
+                                    try:
+                                        shutil.move(s, d)
+                                    except OSError:
+                                        try:
+                                            if os.path.isdir(s):
+                                                shutil.copytree(s, d)
+                                                shutil.rmtree(s, ignore_errors=True)
+                                            else:
+                                                shutil.copy2(s, d)
+                                                os.remove(s)
+                                        except Exception:
+                                            pass
+                            else:
+                                shutil.move(s, d)
+                        except OSError:
+                            # Best-effort fallback: try copying then removing source
+                            try:
+                                if os.path.isdir(s):
+                                    shutil.copytree(s, d)
+                                    shutil.rmtree(s, ignore_errors=True)
+                                else:
+                                    shutil.copy2(s, d)
+                                    try:
+                                        os.remove(s)
+                                    except OSError:
+                                        pass
+                            except Exception:
+                                pass
+                    # finally, ensure the original folder is removed if empty
+                    try:
+                        if os.path.exists(src_instances):
+                            shutil.rmtree(src_instances)
+                    except OSError:
+                        pass
+            except OSError:
+                pass
+
+        # Replace Ore_Diamond_Overworld.json with the patched version if available
+        src_ore = os.path.join('patch_data', 'overworld', 'Ore_Diamond_Overworld.json')
+        dest_dir = os.path.join(temp_dir, 'Server', 'Item', 'Items')
+        dest_ore = os.path.join(dest_dir, 'Ore_Diamond_Overworld.json')
+        try:
+            if os.path.exists(src_ore):
+                os.makedirs(dest_dir, exist_ok=True)
+                try:
+                    if os.path.exists(dest_ore):
+                        os.remove(dest_ore)
+                except OSError:
+                    pass
+                shutil.copyfile(src_ore, dest_ore)
+        except OSError:
+            pass
 
         rezip_temp_dir_into_patched(mod_path, temp_dir)
     finally:

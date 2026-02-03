@@ -37,17 +37,25 @@ def main():
             print("Found Gambling -> Adjusting loot table and coin ingredients")
             patches.patch_gambling(mod_path)
         elif mod_file_name.startswith("Teto_Plush"):
+            print("TETO -> Removing Crafting Recipe")
             patches.patch_teto_plush(mod_path)
         elif mod_file_name.startswith("Violets_Plushies"):
+            print("VIOLET -> Removing Crafting Recipe")
             patches.patch_violet_plushie(mod_path)
         elif mod_file_name.startswith("Dungeon.Khaos"):
+            print("KHAOS DUNGEON -> Making it more expensive")
             patches.patch_khaos(mod_path)
         elif mod_file_name.startswith("Lucky-Blocks"):
+            print("LUCKY BLOCK -> REMOVING CRAFTING")
             patches.patch_lucky_block(mod_path)
         elif mod_file_name.startswith("WalterWhite"):
+            print("Adjusting Walter White Shops")
             patches.patch_walter_white(mod_path)
         elif mod_file_name.startswith("Resurrectable"):
+            print("Resurrectable Dinos -> REMOVING CRAFTING")
             patches.patch_ressurectable_dinos(mod_path)
+        elif mod_file_name.startswith("Stray123.TheOverworld"):
+            patches.patch_overworld(mod_path)
         else:
             print(f"[WARNING] {mod_file_name} not recognized")
 
